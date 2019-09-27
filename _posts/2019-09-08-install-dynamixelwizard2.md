@@ -13,9 +13,4 @@ This article is for the person that get the following error when trying to open 
 2. Make the setup file executable `sudo chmod u+x DynamixelWizard2Setup_x64`
 3. Run `./DynamixelWizard2Setup_x64`
 4. Follow the installation step
-5. Add `DynamixelWizard2` folder to the lib path
-```bash
-sudo sh -c "echo '/home/jonathan/ROBOTIS/DynamixelWizard2/' >> /etc/ld.so.conf.d/dynamixel.conf"
-```
-8. Apply the change `sudo ldconfig`
-9.  Finally, launch `./ROBOTIS/DynamixelWizard2/DynamixelWizard2`
+5. Remove the file `libxcb-dri3.so.0` in `~/ROBOTIS/DynamixelWizard2`
