@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Jonathan Plasse's blog</title>
+        <description>Blog of my personal projects</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Thu, 16 Jan 2020 17:02:57 +0100</pubDate>
+        <lastBuildDate>Thu, 16 Jan 2020 17:02:57 +0100</lastBuildDate>
+        <generator>Jekyll v3.8.6</generator>
+        
+            <item>
+                <title>Enable display of inputs inside Platformio Device Monitor</title>
+                <description>&lt;p&gt;The flag &lt;code class=&quot;highlighter-rouge&quot;&gt;--echo&lt;/code&gt; enable the display of the inputs inside the &lt;em&gt;Platformio Monitor&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;This post explain how to activate it automatically.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add inside &lt;code class=&quot;highlighter-rouge&quot;&gt;platformio.ini&lt;/code&gt; this
+    &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[env:extra_monitor_flags]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;platform&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;board&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;; The part to add
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;monitor_flags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;--echo&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can now test if it work&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.platformio.org/en/latest/projectconf/section_env_monitor.html#monitor-flags&quot;&gt;Monitor Options&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.platformio.org/en/latest/userguide/cmd_device.html#platformio-device-monitor&quot;&gt;platformio device monitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <pubDate>Sun, 13 Oct 2019 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/2019/10/13/platformio-monitor-auto-echo/</link>
+                <guid isPermaLink="true">http://localhost:4000/2019/10/13/platformio-monitor-auto-echo/</guid>
+                
+                <category>platformio</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Installing Fritzing easily on Ubuntu</title>
+                <description>&lt;p&gt;This is an easy method to install Fritzing on Ubuntu using packages.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run in a terminal &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install fritzing fritzing-parts&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can now open Fritzing.&lt;/p&gt;
+</description>
+                <pubDate>Sat, 28 Sep 2019 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/2019/09/28/installing-fritzing-ubuntu/</link>
+                <guid isPermaLink="true">http://localhost:4000/2019/09/28/installing-fritzing-ubuntu/</guid>
+                
+                <category>fritzing</category>
+                
+                <category>linux</category>
+                
+                <category>install</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Installing DynamixelWizard2 on Ubuntu</title>
+                <description>&lt;p&gt;This is how you can install DynamixelWizard2 on Ubuntu.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download &lt;code class=&quot;highlighter-rouge&quot;&gt;DynamixelWizard2Setup_x64&lt;/code&gt; from &lt;a href=&quot;http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/#software-installation&quot;&gt;ROBOTIS website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Make the setup file executable &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod u+x DynamixelWizard2Setup_x64&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;./DynamixelWizard2Setup_x64&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Follow the installation step&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you get the following error:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;DynamixelWizard2: symbol lookup error: /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0: undefined symbol: xcb_dri3_get_supported_modifiers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Remove the file &lt;code class=&quot;highlighter-rouge&quot;&gt;libxcb-dri3.so.0&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/ROBOTIS/DynamixelWizard2&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can now use DynamixelWizard2.&lt;/p&gt;
+</description>
+                <pubDate>Sun, 08 Sep 2019 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/2019/09/08/installing-dynamixelwizard2/</link>
+                <guid isPermaLink="true">http://localhost:4000/2019/09/08/installing-dynamixelwizard2/</guid>
+                
+                <category>linux</category>
+                
+                <category>dynamixel</category>
+                
+                <category>install</category>
+                
+                
+            </item>
+        
+    </channel>
+</rss>
