@@ -1,15 +1,12 @@
 ---
 layout: post
 title:  "Enable display of inputs inside Platformio Device Monitor"
-date:   2019-10-13
-banner_image:
-tags: [platformio]
+ref: platformio-monitor
+lang: en
 ---
 The flag `--echo` enable the display of the inputs inside the *Platformio Monitor*.
 
 This post explain how to activate it automatically.
-
-<!--more-->
 
 1. Add inside `platformio.ini` this
 ```ini

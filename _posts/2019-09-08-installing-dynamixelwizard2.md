@@ -1,14 +1,11 @@
 ---
 layout: post
 title:  "Installing DynamixelWizard2 on Ubuntu"
-date:   2019-09-08
-banner_image:
-tags: [linux, dynamixel, install]
+ref: install-dynamixelwizard2
+lang: en
 ---
 
 This is how you can install DynamixelWizard2 on Ubuntu.
-
-<!--more-->
 
 1. Download `DynamixelWizard2Setup_x64` from [ROBOTIS website](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/#software-installation)
 2. Make the setup file executable `sudo chmod u+x DynamixelWizard2Setup_x64`
